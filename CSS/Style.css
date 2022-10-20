@@ -1,0 +1,65 @@
+h1{
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cornflowerblue;
+}
+.button{
+    position: relative;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+    background-color: blue;
+    color: bisque;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: width .5s,
+    border-radius .5s;
+
+}
+.button *{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .5s;
+
+}
+.icon {
+    opacity: 0%;
+
+}
+.button:focus{
+    width: 30%;
+    background-color: blueviolet;
+    border-radius: 50%;
+}
+.button:focus .text {
+opacity: 0;
+}
+.button:focus .icon{
+    opacity: 1;
+    transition-delay: .5s;
+}
+.cover{
+    background-image:url(C:\Users\Erneider Rojas\Desktop\Rechismes\img\mirador.jpeg) ;
+    font-style: italic;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+    background-color: rgb(26, 134, 84);
+}
+
+.card {
+    border: 0cm !important;
+    box-shadow: 0cm 4px 6px -1px rgba(0, 0, 0, 0.1), 0cm 2px 4px -1px rgba(0, 0, 0, 0.6)
+}
+.card-title {
+min-height: 2.5rem;
+}
+.card-text {
+    min-height: 5rem;
+}
